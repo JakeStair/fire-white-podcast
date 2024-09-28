@@ -1,0 +1,36 @@
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: orange;
+}
+
+
+body {
+    background-image: url('../images/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+    background-position: center;
+}
+
+.btn {
+    color: orange;
+    border: 5px solid orange;
+    display: flex;
+    border-radius: 75px;
+    font-size: 50px;
+    background-color: rgba(255, 255, 255, 0.685);
+    padding: 10px 25px;
+    font-family: 'helvetica';
+  }
+  
+  .btn.animated:hover {
+    transform: scale(1.9); /* Slightly increase the button size on hover */
+}
+
+.btn-container{
+    display: flex;
+    align-items: center;
+}
