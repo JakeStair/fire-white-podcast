@@ -10,27 +10,31 @@
 </head>
 
 <body>
-<header>
-
-</header>
-
+    <header>
+        <nav>
+            <div class="logo-container">
+                <img id="img-home" src="./assets/images/logo-transparent.png" alt="Fire & White Podcast logo">
+            </div>
+            <div class="btn-container btn-group">
+                <button class="special-btn" id="latest-episode">Latest episode</button>
+                <button class="btn" id="all-episodes">All episodes</button>
+                <button class="btn" id="store">Store</button>
+                <button class="btn" id="our-story">Our story</button>
+            </div>
+        </nav>
+    </header>
 
     <main>
         <section class="podcast-episode">
             <div id="buzzsprout-player-15524368"></div>
-            <script
-                src="https://www.buzzsprout.com/2221953/episodes/15524368-lisa-leslie.js?container_id=buzzsprout-player-15524368&player=small"
-                type="text/javascript" charset="utf-8"></script>
         </section>
-        <!-- <div>
-            <img src="./assets/images/2c.jpg" alt="Lisa Leslie shooting at the Los Angeles Sparks">
-        </div> -->
     </main>
 
-    <footer>
-        <p>&copy; 2024 Fire & White Podcast. All rights reserved.</p>
-    </footer>
-    <script src="./assets/js/latest-episodes.js"></script>
+    <footer></footer>
+
+    <!-- Load the podcast player after the rest of the content -->
+    <script src="https://www.buzzsprout.com/2221953/episodes/15524368-lisa-leslie.js?container_id=buzzsprout-player-15524368&player=small" type="text/javascript" charset="utf-8"></script>
+    <script src="./assets/js/latest-episode.js"></script>
 </body>
 
 </html>

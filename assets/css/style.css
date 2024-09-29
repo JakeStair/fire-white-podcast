@@ -120,5 +120,13 @@ body {
         font-size: 20px;
         padding: 8px 15px;
         margin: 10px 0;
+        border: 2.5px solid #FF7F1B;
     }
+}
+
+.logo-container {
+    display: flex;
+    justify-content: flex-start;
+    width: 1%;
+    height: 1%;
 }
