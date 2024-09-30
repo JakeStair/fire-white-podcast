@@ -13,7 +13,7 @@ if (homeButton){
 
 const latestEpisodeButton = document.getElementById('latest-episode');
 if (latestEpisodeButton) {
-    latestEpisodeButton.addEventListener('click', function(){
+    latestEpisodeButton.addEventListener('click', function() {
         console.log('the latest episode button has been clicked successfully!');
         window.location.href = "latest-episode.html";
     });
@@ -21,9 +21,9 @@ if (latestEpisodeButton) {
     console.log('The latest episode button was not found.');
 };
 
-document.getElementById('latest-episode').addEventListener('click', function() {
-    window.location.href = "latest-episode.html";
-});
+// document.getElementById('latest-episode').addEventListener('click', function() {
+//     window.location.href = "latest-episode.html";
+// });
 document.getElementById('all-episodes').addEventListener('click', function() {
     window.location.href = "all-episodes.html";
 });
