@@ -13,7 +13,7 @@ if (homeButton){
 
 const latestEpisodeButton = document.getElementById('latest-episode');
 if (latestEpisodeButton) {
-    latestEpisodeButton.addEventListener('click', function(){
+    latestEpisodeButton.addEventListener('click', function() {
         console.log('the latest episode button has been clicked successfully!');
         window.location.href = "latest-episode.html";
     });
