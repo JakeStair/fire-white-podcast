@@ -1,5 +1,6 @@
-# Fire and White Podcast Website
-  ![License](https://img.shields.io/badge/License-None-blue.svg)
+# Fire and White Podcast Project
+  ![License](https://img.shields.io/badge/License-MIT-blue.svg)
+  
   Igniting stories about legends of women's basketball. A branded webpage where the podcast can be primarily found. This website will be the content juggernaut of the Fire and White Podcast, to be supported by social media, podcast platfroms and other efforts. Hopefully this project can attract sports and basketball fans.
   ## Table of Contents
   - [Description](#description)
@@ -22,7 +23,7 @@
   node index.js
   ```
   Follow the prompts to enter project details like title, description, license, and more.
-  
+  This project is licensed under the [MIT](https://opensource.org/licenses/MIT) license.
   ## Contributing
   If you'd like to contribute to this project, please fork the repository and submit a pull request. For any major changes, please open an issue first to discuss what you'd like to change.
   ## Tests
