@@ -3,9 +3,10 @@ header {
     box-shadow: 0 5px 10px rgba(104, 104, 104, 0.098);
     height: 130px;
     position: fixed;
+    width: 100%;
 }
 main {
-    padding-top: 50px;
+    padding-top: 150px;
 }
 
 h1 {
@@ -25,7 +26,6 @@ img {
 }
 
 body {
-    /* background-image: url('../images/bg-blank.jpg'); */
     background-size: cover;
     background-repeat: repeat;
     height: 100vh;
@@ -50,9 +50,7 @@ body {
     cursor: pointer;
     overflow: hidden;
     text-overflow: ellipsis;
-
-    display: inline;
-
+    display: inline-block;
 }
 
 .special-btn {
@@ -130,10 +128,7 @@ body {
 }
 
 main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 60vh;
+    padding-top: 200px;
 }
 
 .podcast-episode {
@@ -166,6 +161,51 @@ nav {
     /* Slightly increase the button size on hover */
 }
 
-.carousel {}
+/* .nav-buttons {
+    display: flex;
+    flex-wrap: nowrap;
+} */
 
-.carousel-img {}
+.carousel-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%; /* Adjust the width to control the size of the carousel */
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: calc(100% * 5 / 3.5); /* Ensures the carousel can slide */
+}
+
+.carousel-img {
+    min-width: calc(100% / 3.5); /* Each image takes 1/3.5th of the container */
+    height: auto;
+    border-radius: 25px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    margin-right: 10px;
+}
+
+.carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.left-arrow {
+    left: 10px;
+}
+
+.right-arrow {
+    right: 10px;
+}

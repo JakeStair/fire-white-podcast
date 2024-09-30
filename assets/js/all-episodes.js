@@ -35,3 +35,30 @@ document.getElementById('our-story').addEventListener('click', function() {
 });
 
 });
+
+// carousel code
+document.addEventListener('DOMContentLoaded', function() {
+    let currentIndex = 0;
+    const images = document.querySelectorAll('.carousel-img');
+    const totalImages = images.length;
+
+    function updateCarousel() {
+        const carousel = document.querySelector('.carousel');
+        carousel.style.transform = `translateX(${-currentIndex * (100 / 3.5)}%)`;
+    }
+
+    document.getElementById('next-arrow').addEventListener('click', function() {
+        if (currentIndex < totalImages - 3.5) {
+            currentIndex++;
+        }
+        updateCarousel();
+    });
+
+    document.getElementById('prev-arrow').addEventListener('click', function() {
+        if (currentIndex > 0) {
+            currentIndex--;
+        }
+        updateCarousel();
+    });
+});
+
