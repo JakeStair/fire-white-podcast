@@ -1,3 +1,4 @@
+// NAV BAR FUNCTINALITY
 document.addEventListener('DOMContentLoaded', function() {
     console.log('DOM fully loaded and parsed');
 
@@ -35,3 +36,6 @@ document.getElementById('our-story').addEventListener('click', function() {
 });
 
 });
+// NAV BAR FUNCTINALITY
+// ---------------------------------------------
+
