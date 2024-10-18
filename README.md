@@ -1,4 +1,4 @@
-# Fire and White Podcast Project
+# 🔥Fire and White🏀 Podcast Project⛹🏿‍♀️
   
   ## Table of Contents
   - [Description](#description)
@@ -22,12 +22,6 @@
 
   ## Contributing
   If you'd like to contribute to this project, please fork the repository and submit a pull request. For any major changes, please open an issue first to discuss what you'd like to change.
-
-  ## Tests
-  To run tests, use the following command:
-  ```
-  npm test
-  ```
 
   ## Questions
   If you have any questions about the project, feel free to contact me:
