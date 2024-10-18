@@ -175,6 +175,7 @@ nav {
     width: 100%; /* Adjust the width to control the size of the carousel */
     margin: 0 auto;
     overflow: hidden;
+    margin-left: 30px;
 }
 
 .carousel {
@@ -188,7 +189,7 @@ nav {
     height: auto;
     border-radius: 25px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 .carousel-arrow {
