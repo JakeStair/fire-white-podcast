@@ -172,7 +172,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80%; /* Adjust the width to control the size of the carousel */
+    width: 100%; /* Adjust the width to control the size of the carousel */
     margin: 0 auto;
     overflow: hidden;
 }
