@@ -185,13 +185,30 @@ nav {
     width: calc(100% * 5 / 3.5); /* Ensures the carousel can slide */
 }
 
+/* General carousel styles for larger screens */
 .carousel-img {
-    min-width: calc(100% / 3.5); /* Each image takes 1/3.5th of the container */
+    min-width: calc(100% / 5); /* Each image takes 1/5th of the container */
     height: auto;
     border-radius: 25px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
     margin-right: 20px;
+    transition: min-width 0.5s ease; /* Smooth transition when resizing */
 }
+
+/* Media query for mobile (max-width: 768px) */
+@media (max-width: 768px) {
+    .carousel {
+        width: 200%; /* Ensures two images are visible without shrinking */
+        transition: width 0.5s ease; /* Smooth transition for width */
+    }
+
+    .carousel-img {
+        min-width: calc(100% / 2); /* Each image takes 1/2 of the container on mobile */
+        margin-right: 10px; /* Less space between images */
+        transition: min-width 0.5s ease; /* Smooth transition for width */
+    }
+}
+
 
 .carousel-arrow {
     position: absolute;

@@ -37,28 +37,55 @@ document.getElementById('our-story').addEventListener('click', function() {
 });
 
 // carousel code
-document.addEventListener('DOMContentLoaded', function() {
-    let currentIndex = 0;
-    const images = document.querySelectorAll('.carousel-img');
-    const totalImages = images.length;
+// document.addEventListener('DOMContentLoaded', function() {
+//     let currentIndex = 0;
+//     const images = document.querySelectorAll('.carousel-img');
+//     const totalImages = images.length;
 
-    function updateCarousel() {
-        const carousel = document.querySelector('.carousel');
-        carousel.style.transform = `translateX(${-currentIndex * (100 / 3.5)}%)`;
+//     function updateCarousel() {
+//         const carousel = document.querySelector('.carousel');
+//         carousel.style.transform = `translateX(${-currentIndex * (100 / 3.5)}%)`;
+//     }
+
+//     document.getElementById('next-arrow').addEventListener('click', function() {
+//         if (currentIndex < totalImages - 3.5) {
+//             currentIndex++;
+//         }
+//         updateCarousel();
+//     });
+
+//     document.getElementById('prev-arrow').addEventListener('click', function() {
+//         if (currentIndex > 0) {
+//             currentIndex--;
+//         }
+//         updateCarousel();
+//     });
+// });
+
+const carousel = document.querySelector('.carousel');
+const images = document.querySelectorAll('.carousel-img');
+let currentIndex = 0;
+const totalImages = images.length;
+
+function moveCarousel() {
+    const imageWidth = images[0].clientWidth;
+    carousel.style.transform = `translateX(${-currentIndex * imageWidth}px)`;
+}
+
+document.querySelector('.right-arrow').addEventListener('click', () => {
+    if (currentIndex < totalImages - 1) {
+        currentIndex++;
+        moveCarousel();
     }
-
-    document.getElementById('next-arrow').addEventListener('click', function() {
-        if (currentIndex < totalImages - 3.5) {
-            currentIndex++;
-        }
-        updateCarousel();
-    });
-
-    document.getElementById('prev-arrow').addEventListener('click', function() {
-        if (currentIndex > 0) {
-            currentIndex--;
-        }
-        updateCarousel();
-    });
 });
 
+document.querySelector('.left-arrow').addEventListener('click', () => {
+    if (currentIndex > 0) {
+        currentIndex--;
+        moveCarousel();
+    }
+});
+
+window.addEventListener('resize', () => {
+    moveCarousel(); // Recalculate position on window resize
+});
