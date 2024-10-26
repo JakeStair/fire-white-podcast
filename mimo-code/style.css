@@ -1,0 +1,106 @@
+h1 {
+    color: orange;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 200%;
+    text-align: center;
+  }
+  
+  p {
+  color: orange;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: rgb(59, 59, 59);
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 5px;
+  }
+  
+  nav ul li a:hover {
+    color: rgb(255, 207, 117);
+  }
+  
+  nav img {
+    display: block; /* Ensures image is not hidden */
+    width: 25px; 
+    height: auto;
+    margin-left: 10px;
+  }
+  
+  .topdiv {
+    color: white;
+    font-size: 12px;
+    padding: 8px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(88, 88, 88);
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Main content takes 2/3 and sidebar 1/3 */
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .main-content {
+    background-color: #f9f9f9;
+    padding: 20px;
+  }
+  
+  .main-content img {
+    width: 100%; /* Makes the image responsive */
+    height: auto;
+    max-height: 800px; /* You can adjust this value as needed */
+    object-fit: cover; /* Ensures the image covers the container and preserves aspect ratio */
+    margin-top: 10px;
+  }
+  
+  .sidebar {
+    background-color: #f1f1f1;
+    padding: 20px;
+  }
+  
+  .sidebar h2 {
+    color: rgb(0, 0, 0);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar ul li {
+    margin: 10px 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  }
+  
+  .sidebar ul li a {
+    color: #515151;
+    text-decoration: none;
+  }
+  
+  .sidebar ul li a:hover {
+    color: #ffa600;
+  }
