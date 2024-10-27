@@ -3,46 +3,66 @@
   <head>
     <title>Fire & White Podcast</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/react/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/babel-standalone/babel.min.js"></script>
   </head>
   <body>
-    <div class="topdiv">Fire & White Podcast</div>
-    <nav>
-      <a href="index.html">
-        <img
-          src="https://www.dropbox.com/scl/fi/5to2b9bjxhqlupe15qp4n/Fire-White-logo-with-Dimension.png?rlkey=qg64tenakor1x96oqn3v8r0zt&st=tohsun0t&raw=1"
-          alt="logo"
-        />
-      </a>
-      <ul>
-        <li><a href="#">Episodes</a></li>
-        <li><a href="#">Store</a></li>
-        <li><a href="#">Our Story</a></li>
-      </ul>
-    </nav>
-    <main class="container">
-      <section class="main-content">
-        <img src="https://www.dropbox.com/scl/fi/m89p44ghkcjgprvshgv83/Fire-and-White-cover.jpg?rlkey=8ftm4tshap0wy26xafpqtcmyr&st=ih987kaa&raw=1"/>
-        <p>Igniting stories about legends of women's basketball.</p>
-        <img src="https://www.dropbox.com/scl/fi/edvb0usl336joq3rybzhy/2nd-page.jpg?rlkey=06sjdsm4uxyka647sylnsbrkt&st=uh7uuyu4&raw=1" />
-        <img src="https://www.dropbox.com/scl/fi/hmksc5dxygtf0tglkgtvz/We-Got-Next.jpg?rlkey=ei18tlb2q6b1cg25i1c98bmj3&st=c2d4m3h3&raw=1" />
-      </section>
-      <aside class="sidebar">
-        <h2>Episodes</h2>
-        <ul>
-          <li><a href="#">Series Trailer</a></li>
-          <li><a href="tamika-catchings.html">Tamika Catchings</a></li>
-          <li><a href="#">Lisa Leslie</a></li>
-          <!-- Add more episodes here -->
-        </ul>
-        <h2>Future Episodes</h2>
-        <ul class="future-episode-links">
-          <li><a href="#">'97 Houston Comets</a></li>
-          <li><a href="#">'01 Los Angeles Sparks</a></li>
-          <li><a href="#">'03 Detroit Shock</a></li>
-          <!-- Add more links here -->
-        </ul>
-      </aside>
-    </main>
-    <script src="script.js"></script>
+    <div id="root"></div>
+    <script type="text/babel">
+      const Header = () => (
+        <div>
+          <div className="topdiv">Fire & White Podcast</div>
+          <nav>
+            <a href="index.html">
+              <img src="https://www.dropbox.com/scl/fi/5to2b9bjxhqlupe15qp4n/Fire-White-logo-with-Dimension.png?rlkey=qg64tenakor1x96oqn3v8r0zt&st=tohsun0t&raw=1" alt="logo" />
+            </a>
+            <ul>
+              <li><a href="#">Episodes</a></li>
+              <li><a href="#">Store</a></li>
+              <li><a href="#">Our Story</a></li>
+            </ul>
+          </nav>
+        </div>
+      );
+
+      const MainContent = () => (
+        <section className="main-content">
+          <img src="https://www.dropbox.com/scl/fi/m89p44ghkcjgprvshgv83/Fire-and-White-cover.jpg?rlkey=8ftm4tshap0wy26xafpqtcmyr&st=ih987kaa&raw=1" />
+          <p>Igniting stories about legends of women's basketball.</p>
+          <img src="https://www.dropbox.com/scl/fi/edvb0usl336joq3rybzhy/2nd-page.jpg?rlkey=06sjdsm4uxyka647sylnsbrkt&st=uh7uuyu4&raw=1" />
+          <img src="https://www.dropbox.com/scl/fi/hmksc5dxygtf0tglkgtvz/We-Got-Next.jpg?rlkey=ei18tlb2q6b1cg25i1c98bmj3&st=c2d4m3h3&raw=1" />
+        </section>
+      );
+
+      const Sidebar = () => (
+        <aside className="sidebar">
+          <h2>Episodes</h2>
+          <ul>
+            <li><a href="#">Series Trailer</a></li>
+            <li><a href="tamika-catchings.html">Tamika Catchings</a></li>
+            <li><a href="#">Lisa Leslie</a></li>
+          </ul>
+          <h2>Future Episodes</h2>
+          <ul className="future-episode-links">
+            <li><a href="#">'97 Houston Comets</a></li>
+            <li><a href="#">'01 Los Angeles Sparks</a></li>
+            <li><a href="#">'03 Detroit Shock</a></li>
+          </ul>
+        </aside>
+      );
+
+      const App = () => (
+        <div>
+          <Header />
+          <main className="container">
+            <MainContent />
+            <Sidebar />
+          </main>
+        </div>
+      );
+
+      ReactDOM.render(<App />, document.getElementById('root'));
+    </script>
   </body>
 </html>

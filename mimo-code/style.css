@@ -6,8 +6,8 @@ h1 {
   }
   
   p {
-  color: orange;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: orange;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
   
   nav {
@@ -42,7 +42,7 @@ h1 {
   
   nav img {
     display: block; /* Ensures image is not hidden */
-    width: 25px; 
+    width: 25px;
     height: auto;
     margin-left: 10px;
   }
