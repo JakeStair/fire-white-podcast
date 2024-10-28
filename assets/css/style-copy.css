@@ -1,0 +1,186 @@
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: orange;
+}
+
+/* Header styles */
+header {
+    height: 100px; /* Adjust height */
+    background-image: url('../images/header-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.header-content {
+    display: flex;
+    gap: 20px; /* Add space between logo and links */
+    justify-content: space-between; /* Distribute space evenly */
+    align-items: center;
+    padding: 0 20px; /* Increase padding for more space between logo and links */
+    height: 100%;
+    position: relative;
+    z-index: 5;
+}
+
+.logo {
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    height: 120px;
+    margin: 0 30px;
+}
+
+/* Flexbox for aligning the links on both sides */
+.header-left {
+    display: flex;
+    flex-direction: row; /* Align links in a row (horizontally) */
+    align-items: center;
+    margin-top: 40px;
+    margin-left: 200px;
+}
+
+.header-right {
+    display: flex;
+    flex-direction: row; /* Align links in a row (horizontally) */
+    align-items: center;
+    margin-top: 40px;
+    margin-right: 150px;
+}
+
+/* Style for individual links */
+.header-left a,
+.header-right a {
+    text-decoration: none;
+    font-size: 22px;
+    color: #fff;
+    display: inline-block; /* Ensure the links are displayed inline */
+    font-variation-settings: "wght" 300;
+    font-family: gal-gothic-variable;
+    letter-spacing: 2px;
+}
+
+.header-left a {
+    margin-left: 40px; /* Add space on the left of the links */
+}
+
+.header-right a {
+    margin-right: 40px; /* Add space on the right of the links */
+}
+
+.header-right a:hover,
+.header-left a:hover {
+    transform: scale(1.02); /* Slightly increase the button size on hover */
+    color: rgb(255, 221, 157);
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+}
+
+@media (min-width: 1200px) {
+    .main-content {
+        padding: 20px 40px; /* Increase padding on wider screens */
+    }
+}
+
+/* Adjust for mobile responsiveness */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px; /* Adjust gap for smaller screens */
+    }
+
+    /* Center links under logo */
+    .header-left, .header-right {
+        justify-content: center;
+        margin: 0; /* Reset margins for smaller screens */
+    }
+
+    .header-left a, .header-right a {
+        margin: 10px 0; /* Stack links vertically on small screens */
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        margin-left: 9px;
+        margin-top: 20px;
+    }
+
+    .main-content {
+        padding: 10px; /* Decrease padding on smaller screens */
+        margin: 0 10px; /* Add a small gutter on both sides for mobile */
+    }
+
+    .content-wrapper {
+        flex-direction: column; /* Stack content vertically on smaller screens */
+        padding: 0 10px; /* Smaller gutter on mobile */
+    }
+
+    .main-content, .sidebar {
+        max-width: 100%; /* Make content and sidebar take full width */
+        margin: 0; /* Remove auto margin on mobile */
+    }
+}
+
+body {
+    background-color: #F4F4F4;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+    background-position: center;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: flex-start;
+    width: 1%;
+    height: 1%;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.main-content {
+    background-color: #f9f9f9;
+    padding: 20px;
+    max-width: 700px; /* Set maximum width for main content */
+    margin: 0 auto;    /* Center the main content with auto margins */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+    border-radius: 8px; /* Optional: Rounded corners */
+    border-right: 1px solid #ddd; /* Add a border between main content and sidebar */
+}
+
+.main-content img {
+    width: 100%; /* Makes the image responsive */
+    height: auto;
+    max-height: 800px; /* You can adjust this value as needed */
+    object-fit: cover; /* Ensures the image covers the container and preserves aspect ratio */
+    margin-top: 10px;
+}
+
+.sidebar {
+    background-color: #e0e0e0; /* Sidebar background */
+    padding: 20px; /* Internal padding for sidebar */
+    max-width: 300px; /* Sidebar width */
+    margin: 0 auto; /* Center sidebar and match the gutter behavior */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-radius: 8px; /* Optional: rounded corners */
+    border-left: 1px solid #ddd; /* Connect the sidebar to main content */
+}
+
+.content-wrapper {
+    display: flex;
+    gap: 20px; /* Space between main content and sidebar */
+    justify-content: space-between;
+    padding: 0 20px; /* Add gutter on both sides */
+}
